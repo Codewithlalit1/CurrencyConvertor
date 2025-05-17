@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Currency-Convertor</h1>
+    <div id="input">
+        <form>
+            <select name="from" id="countryselect">
+                <option value="USD" selected>USD</option>
+                <option value="INR">INR</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+            </select>
+            <img src="https://flagsapi.com/US/flat/64.png" alt="" id="image1">
+        </form>
+            <label for="dateInput">Select a date:</label>
+            <input type="date" id="dateInput" name="dateInput">
+        
+            <label for="curr">Enter the amount : </label><br>
+            <input type="text" name="curr" id="curr"> <br>
+            <button id="submit">Submit</button>
+        
+    </div>
+    <h2>To</h2>
+    <div>
+        <form action="">
+            <select name="from" id="convertedCountry">
+                <option value="USD">USD</option>
+                <option value="INR" selected>INR</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+            </select>
+            <img src="https://flagsapi.com/IN/flat/64.png" alt="" id="image2">
+        </form>
+        <label for="">Converted Amount : </label><br>
+        <input type="text" id="output">
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

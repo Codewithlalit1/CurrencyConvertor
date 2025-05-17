@@ -1,0 +1,185 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #333;
+  }
+  
+  /* Container styles */
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+  }
+  
+  h1::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #3498db;
+    margin: 10px auto 0;
+    border-radius: 2px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h2::before, h2::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #bdc3c7;
+    flex: 1;
+    margin: 0 15px;
+  }
+  
+  /* Currency input and output containers */
+  div {
+    background-color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Dropdown styling */
+  select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+    outline: none;
+    flex: 1;
+  }
+  
+  select:hover, select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  }
+  
+  /* Input fields styling */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    outline: none;
+  }
+  
+  #output {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  /* Button styling */
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  /* Flag image styling */
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    object-fit: cover;
+  }
+  
+  /* Labels styling */
+  label {
+    font-weight: 500;
+    color: #555;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 500px) {
+    div {
+      padding: 1rem;
+    }
+    
+    h1 {
+      font-size: 2rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    select, input[type="text"], button {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+    
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
